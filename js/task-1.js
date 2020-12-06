@@ -1,10 +1,9 @@
-const logItems = function(array) {
-    const logs = ['Mango', 'Poly', 'Ajax', 'Lux', 'Jay', 'Kong'];
+const items = ["Mango", "Poly", "Ajax", "Lux", "Jay", "Kong"];
 
-    for (let i = 0; i < logs.length; i += 1) {
-        console.log(logs[i], length[i]);
-      }
-  };
+const logItems = (arr) => {
+  for (let i = 0; i < arr.length; i += 1) {
+    console.log(`${i + 1} - ${items[i]}`);
+  }
+};
 
-
-  logItems();
+logItems(items);
