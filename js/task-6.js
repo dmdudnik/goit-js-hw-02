@@ -1,18 +1,22 @@
+function sumNumbers() {
+
 let input;
-const numbers = [];
+let numbers = [];
 let total = 0;
 
-
-input = prompt('Введите число!');
-
-if (input !== null){
-    let values = numbers.push(input).split(' ');
-
-    for (let value  of values){
+while (true) {
+    input = prompt('Введите число!');
     
-        total += Number(value);
+
+    if (input === null){
+        break;
     }
-    
-   console.log(total);
-
+    numbers.push(input);
 }
+
+    for (let number of numbers){
+        total += Number(number);  
+    }   
+return total;
+}
+alert(`Общая сумма чисел равна ${sumNumbers()}`); 
